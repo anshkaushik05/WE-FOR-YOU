@@ -219,7 +219,7 @@ app.post('/delete', async (req, res) => {
   res.redirect('/insert');
 })
 
-app.listen('3000', () => {
+app.listen('80', () => {
   console.log('Server started');
 })
 
