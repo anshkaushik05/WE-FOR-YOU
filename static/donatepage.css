@@ -1,0 +1,80 @@
+body{
+  background:#f7f8fa;
+  background-color: #102125;
+  font-family: 'Roboto Mono', monospace;
+}
+div {
+ height: 40vw;
+ border: 0.1vw solid black;
+ display: inline-block;
+ /* background: url(ansh.png) no-repeat center; */
+  width: 29vw;
+ background-color: #101010;
+ color: white;
+ border-radius: 1vw;
+}
+div img{
+  border-radius: 1vw;
+}
+.ngo:hover{
+box-shadow:0 45px 45px -20px rgb(143, 33, 33);
+}
+
+.ngo_para{
+  
+    font-weight: bold;
+    font-size: 0.7vw;
+    margin-bottom: 10vw;
+}
+
+.NgoContainer1 div{
+  margin: 1vw;
+}
+.NgoContainer1{
+  padding-left:1.9vw;
+margin-bottom: 2vw;
+ margin-top: 3.2vw; 
+}
+
+.NgoContainer2{
+  padding-left:15vw;
+  margin-bottom: 2vw;
+}
+#ngo4{
+  margin-right:4.5vw;
+}
+
+#ngo5{
+  margin-left:4.5vw;
+}
+
+section img{
+  width: 29vw;
+  height: 15vw;
+}
+
+section a{
+  border: 0.1vw solid black;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  background: linear-gradient(to right, #870000 0%, #190a05 100%);
+  border-radius: 0.5vw;
+  color: rgb(233, 183, 149);
+  margin-left: 10vw;
+  font-size: 1vw;
+}
+/* 
+1vw */
+section a:hover{
+   background: linear-gradient(to right, #870100 0%, #190a15 100%);
+
+   /* background: #870000; */
+   transition: 0.5s all;
+         transition-timing-function: cubic-bezier(0.29, 1.9, 0.92, 0.62);
+}
+
+div h1{
+  font-size: 2vw;
+  text-align: center;
+  color: rgb(233, 183, 149);
+}

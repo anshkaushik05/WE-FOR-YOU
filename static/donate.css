@@ -1,0 +1,57 @@
+ .donate_options{
+            display: flex;
+            justify-content:space-around;
+            background-color: #f7f8fa;
+            height: 35vw;
+            /* align-content:center; */
+            padding-top: 2vw;
+        }
+        .donate{
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 28vw;
+            height: 30vw;
+            padding: 1vw;
+            border-radius: 10px;
+            box-shadow: 0 45px 45px -20px rgb(25 45 100 / 15%);
+        }
+        .donate_button{
+            align-self:center;
+            background: tomato;
+            display: inline-block;
+            width: 8vw;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border: 0.1vw aqua solid;
+            border-radius: 0.5vw;
+            padding: 0.5vw;
+            position: relative; 
+             top: 4vw;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1vw;
+        }
+        .donate_head{
+            align-self:center;
+            width: 10vw;
+            height: 1.5vw;
+            text-align: center;
+            border: 0.2vw black solid;
+            border-radius: 20vw;
+            padding: 0.5vw;
+            background: rgb(6, 6, 53);
+            color: cyan;
+            /* width: 10vw; */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5vw;
+            position: relative;
+            top: -2vw;
+        }
+        .donate_content{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1vw;
+        }
+        #helping_hand{
+          width: 12vw;
+        } 

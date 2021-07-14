@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="donatepage.css">
+  <link href="new_nav.css" rel="stylesheet" type="text/css" />
+
+  <link rel="icon" href="logo.png">
+
+</head>
+
+<body>
+  <header class="head">
+    <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="">
+    <h1 class="name">We For You</h1>
+    <ul style="display: inline-block; position: relative; left: 0vw;">
+      <li style="display: inline;"><a href="/" class="nav">
+          <p>Home</p>
+        </a></li>
+      <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+          <p>Donate</p>
+        </a></li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="/searchMed" class="nav_login">
+            <% } else { %>
+              <a href="/login" class="nav_login">
+                <% } %>
+                  <p>Helping Hand</p>
+              </a>
+      </li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="" class="review">
+            <p>
+              <%= FullName %>
+            </p>
+            <% } else { %>
+              <a href=" /login" class="review">
+                <p>
+                  Login
+                </p>
+                <% } %>
+              </a>
+      </li>
+      <li style=" display: inline;">
+        <% if(FullName){ %>
+          <a href="/logout" class="rate_us" style="display:inline-block;">
+            <p>
+              Logout
+            </p>
+          </a>
+          <% } else { %>
+            <a href="" class="rate_us" style="display:none;">
+            </a>
+            <% } %>
+
+      </li>
+    </ul>
+  </header>
+  <br>
+  <section class="NgoContainer1">
+    <div id="ngo1" class="ngo">
+      <img
+        src="https://jnj-content-lab.brightspotcdn.com/dims4/default/4f82fe4/2147483647/strip/true/crop/1440x666+0+0/resize/1440x666!/quality/90/?url=http%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2F82%2F87%2F1f02f86a4ddfb68d44840e7d8cf5%2Flede-doctorfrontlineschina.jpg"
+        alt="">
+      <h1>ACT Grants</h1>
+      <p class="ngo_para">
+        We believe anything is possible when founders, investors, venture capitalists and tech entrepreneurs come together for a larger purpose.
+        Leaders who create great shareholder value also have the empathy to create greater shared value. Together we are backing India’s best social entrepreneurs to combat COVID-19 using inventive start-up thinking. 
+        We are supporting ideas that are capital efficient, scale ready and are creating immediate impact. 
+        We started with COVID-19 and health and now are making a difference in environment, education and empowerment of women.
+        If you’re a venture capitalist or a philanthropist. If you are an entrepreneur or a person with an idea, a tech start-up or a social change activist. Or a passionate individual who feels the way we feel … We believe you have something to give.
+      </p>
+      <a href="https://pages.razorpay.com/pl_H2qrVSfEjlvYqi/view">Donate Now!</a>
+    </div>
+    <div id="ngo2" class="ngo">
+      <img
+        src="https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/06/GettyImages-471394055-1024x683.jpg?w=1155&h=3584"
+        alt="">
+      <h1>Friends 2 Support</h1>
+      <p class="ngo_para">
+        Friends2Support is the World's largest voluntary blood donors online platform & a non-profit organization providing access to contact blood donors online from its website and mobile applications.
+
+        An organisation with primary focus on bringing voluntary blood donors closer to those who need them. The idea is to facilitate a requestor to approach a donor in his/her required location and time.
+        We are also trying to provide as many resources as we can for rural child education. Anyone who believes in our principles and has desire to serve humanity are welcome to join us as everyone's friends.
+        Serving the needy in every nook and corner of India, friends2support has been making the free database of voluntary donors' contact information available 24X7 on all possible platforms leveraging the emerging technologies.
+      </p>
+      <a href="https://www.friends2support.org/inner/news/donorRegistration.aspx">Donate Now!</a>
+    </div>
+    <div id="ngo3" class="ngo">
+      <img
+        src="https://us.123rf.com/450wm/stylephotographs/stylephotographs1510/stylephotographs151000049/46991908-smiling-geriatric-nurse-with-group-of-senior-people-in-a-nursing-home.jpg?ver=6"
+        alt="">
+      <h1>HelpAge India</h1>
+
+      <p class="ngo_para">
+        HelpAge conducts cataract eye surgeries in 21 states with medical support of credible and competent eye hospitals and organizations. Since 1980, under this program 45,000 cataract eye surgeries have been conducted annually. This has benefited more than nine lakh elderly till date This year, it aims to conduct close to 60,000 cataract surgeries across the country. Donate to help elderly get their vision back. Your donation will gift a vision to one of the 12 million elders in India suffering from cataract affected blindness and who cannot afford treatment.The aim is to serve elder needs in a holistic manner, dignified and healthier lives. It provides relief & rehabilitation for elders post disasters and provides active-ageing opportunities.Its largest supports are individuals who donate to the elder cause from their hard-earned money.
+      </p>
+      <a href="https://www.helpageindia.org/donate/">Donate Now!</a>
+    </div>
+  </section>
+
+  <section class="NgoContainer2">
+    <div id="ngo4" class="ngo">
+      <img
+        src="https://cdn.twistarticle.com/wp-content/uploads/2021/05/Ola-and-GiveIndia-Partner-to-Launch-O2ForIndia-Initiative.jpg"
+        alt="">
+      <h1>Give India</h1>
+      <p class="ngo_para">
+        GiveIndia was born to bridge the gap between the people who want to make a difference through giving back and those who are doing phenomenal work but need more support. Our focus has been to build trust for the social sector by strong due diligence of all our nonprofit partners, and transparency on how donations impacted lives on the ground.
+        We are proud to have played a small role in enabling giving across all segments of our society - everyday givers, (U)HNI givers, corporates and foundation. GiveIndia exists to alleviate poverty by enabling the world to give. Established in 2000, we are the largest and the most trusted giving platform in India today. We enable individuals and organisations to raise and donate funds conveniently to any cause they care about, with offerings including crowdfunding, corporate giving, cause marketing and philanthropy consulting.
+      </p>
+      <a href="https://www.giveindia.org/program/Support-the-living-expenses-of-an-orphan-child">Donate Now!</a>
+
+    </div>
+    <div id="ngo5" class="ngo">
+      <img
+        src="https://youthdeck.com/wp-content/uploads/2020/07/feeding-india.jpg" 
+        alt="">
+      <h1>Feeding India</h1>
+      <p class="ngo_para">
+        We believe providing regular meals to dependents in underserved communities to reduce financial burden in the short term, empowering them to become free from hunger in the long term.We have a growing network of credible NGOs involved in the field of education, skill development and livelihood to feed dependent beneficiaries including children, elderly, women and specially abled.
+        With a network of 26,000+ volunteers across 100+ cities in India, Feeding India by Zomato continues to work towards its joint mission of ‘better food for more people’ and ‘zero hunger’ to take the dream of ending hunger a step closer to reality.
+        Your contribution will go a long way in ensuring a reliable supply of meals for our daily wager community during the current lockdowns in the region.Our aim is to ensure, hunger never comes in the way of a brighter future.
+      </p>
+      <a href="https://www.payumoney.com/paybypayumoney/#/EC0D6F39DB01B8BDF4DDC41F13EEBDC6">Donate Now!</a>
+
+    </div>
+  </section>
+  <section class="Quote">
+    <!-- what we do for ourself dies with us what we do for the others and the world remains & is immortal -->
+    <section>
+      <script src="nav.js"></script>
+
+</body>
+
+</html>

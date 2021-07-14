@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer</title>
+  <link rel="stylesheet" href="register_customer.css">
+  <link href="new_nav.css" rel="stylesheet" type="text/css" />
+
+  <link rel="icon" href="logo.png">
+</head>
+
+<body class="bg_all">
+  <header class="head">
+    <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="">
+    <h1 class="name">We For You</h1>
+    <ul style="display: inline-block; position: relative; left: 0vw;">
+      <li style="display: inline;"><a href="/" class="nav">
+          <p>Home</p>
+        </a></li>
+      <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+          <p>Donate</p>
+        </a></li>
+      <li style="display: inline;"><a href="/login" class="nav_login">
+          <p>Helping Hand</p>
+        </a></li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="" class="review">
+            <p>
+              <%= FullName %>
+            </p>
+            <% } else { %>
+              <a href=" /login" class="review">
+                <p>
+                  Login
+                </p>
+                <% } %>
+              </a>
+      </li>
+      <li style=" display: inline;">
+        <% if(FullName){ %>
+          <a href="/logout" class="rate_us" style="display:inline-block;">
+            <p>
+              Logout
+            </p>
+          </a>
+          <% } else { %>
+            <a href="" class="rate_us" style="display:none;">
+            </a>
+            <% } %>
+
+      </li>
+    </ul>
+  </header>
+  <div class="customer">
+    Customer
+  </div>
+  <div class="register">
+    <h2 class="sign_up">Sign Up</h2>
+    <form method="POST" action="/customerRegister" class="register_form" id="form_post">
+      <!-- <p class="register_fields">Full Name</p> -->
+      <input type="textarea" placeholder="Enter Full Name" class="register_values" name='name'><br>
+      <!-- <p class="register_fields">Email id</p> -->
+      <input type="email" placeholder="Email address" class="register_values" name='email'><br>
+      <!-- <p class="register_fields">User Name</p> -->
+      <input type="textarea" placeholder="User name" class="register_values" name='username'><br>
+      <!-- <p class="register_fields">Password</p> -->
+      <input type="password" placeholder="Password" name='password' class="register_values" id="pass"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required><br>
+      <!-- <p class="register_fields">Confirm Password</p> -->
+      <input type="password" placeholder="Confirm Password" class="register_values" name="confirmpassword" id="cpass"><br>
+      <p id="checkpass">please enter same password in confirmpassword</p>
+      <input type="submit" id="submit">
+      <a class="sign_up_btn">Sign Up</a>
+      <a class="sign_in_btn" href="/login">Sign In --></a>
+    </form>
+    <br>
+    <br>
+
+  </div>
+</body>
+<script src="register_customer.js"></script>
+<script src="nav.js"></script>
+
+</html>

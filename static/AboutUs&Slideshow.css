@@ -1,0 +1,179 @@
+
+body{
+  font-family: 'Signika Negative', sans-serif;
+  margin:0;
+  padding:0;
+  height:100vh;
+  /* display: flex; */
+  justify-content:center;
+  align-items: center;
+}
+#loading{
+  width:100%;
+  height:100vh;
+  background: #fff 
+  /* url("Rolling-1s-30px.gif") no-repeat center; */
+  z-index:3;
+  position: fixed;
+}
+.slider{
+  width:100%;
+  height:45vw;
+  /* border-radius: 1vw; */
+  overflow: hidden;
+}
+
+.slides{
+  width:500%;
+  height:25vw;
+  display:flex;
+}
+
+ .slides input{
+  display: none;
+}
+
+.slide{
+  width:20%;
+  transition:2s;
+}
+
+.slide img{
+  width: 100%;
+  height: 45vw;
+
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  margin-top:14vw;
+  display: flex;
+  justify-content: center;
+
+}
+
+.manual-btn{
+    border: 0.13vw solid cyan;
+    padding: 0.5vw;
+    border-radius: 10vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right:1vw;
+}
+
+.manual-btn:hover{
+  background: cyan;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio4:checked ~ .first{
+   margin-left: -60%;
+}
+
+/* automatic */
+.navigation-auto{
+  position: absolute;
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 39vw;
+}
+
+.navigation-auto div{
+  border: 0.13vw solid cyan;
+  padding: 0.5vw;
+  border-radius: 10vw;
+  cursor: pointer;
+  transition: 2s;
+ 
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right:1vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: cyan;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: cyan;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: cyan;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: cyan;
+}
+
+#AboutUs{
+  
+    
+    background: black;
+    /* position: absolute;
+    top: 48.%;
+    opacity: 0.8; */
+    background: url(https://adofwwisno.cloudimg.io/v7/thishope.org/wp-content/uploads/2016/08/20th-donate-bg-dark.jpg) no-repeat center;
+    background-size: 100% ;
+    opacity: 1.5;
+}
+
+/* #AboutUs h2{
+  font-size: 10%;
+} */
+#AboutUs #AboutUsPara{
+  font-family: 'Signika Negative', sans-serif;
+    width: 50vw;
+    padding-left: 7vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 10%;
+    color: white;
+    display: inline-block;
+    font-size: 1.3vw;
+}
+/* #abtUsh{
+  font-size: 210%;
+} */
+#sp{
+  color: cyan;
+  font-family: serif;
+  font-size: 2.5vw;
+ text-decoration: underline;
+  text-decoration-color: orange;
+  /* text-decoration-thickness: 10%; */
+}
+#imgabt{
+  height: 15vw;
+  border-radius: 7%;
+
+}
+#AboutUs #AboutUsImage{
+  display: inline-block;
+    padding-top: 9vw;
+    padding-left: 7vw;
+
+}
+#aboutuspara{
+    padding-top: 5%;
+}
+/* #color{
+  background: black;
+    height: 431.58px;
+    /* width: 100%; */
+    /* background: url(https://adofwwisno.cloudimg.io/v7/thishope.org/wp-content/uploads/2016/08/20th-donate-bg-dark.jpg) no-repeat center;
+    background-size: 100% 500px;
+    opacity: 1.5; */
+

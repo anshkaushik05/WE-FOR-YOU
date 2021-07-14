@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #102125;
+}
+
+.med_query{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 5vw;
+    margin-bottom: 2vw;
+    margin-left: 4vw;
+    margin-top: 5vw;
+}
+.med_name, .city_name{
+    margin: 1vw;
+    /* background-color: #101010; */
+    width: 25vw;
+    border-radius:1vw;
+    text-align: center;
+    padding: 0.7vw 0vw 0.5vw 0vw;
+    /* font-family: fantasy; */
+    font-size: 2.5vw;
+    color: #c1b5b2;
+    /* text-align: center; */
+} 
+
+.main{
+  /* border:0.1vw solid goldenrod;
+  border-radius: 1vw;
+  width:55vw;
+  margin-left: 22.5vw;
+  text-align: center;
+  margin-bottom:2vw;
+  font-size:1.2vw;
+  color: rgb(18, 201, 201);
+  background-color: #164e5a; */
+  border: 0.1vw solid #544d3c;
+    border-radius: 1vw;
+    width: 55vw;
+   height:7vw;
+    margin-left: 22.5vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
+    color: rgb(152 152 152);
+    background-color: #13121f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    /* opacity: 0.6; */
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:0.1vw solid #c1b5b2; 
+}
+.name{
+  font-size: 2vw;
+}
+.medicine{
+      margin-top: 0.5vw;
+}
+.dealer{
+  margin-bottom:0.5vw;
+}
+.address{
+  padding-top:0.5vw;
+}

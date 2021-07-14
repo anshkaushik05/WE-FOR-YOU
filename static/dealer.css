@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  body{
+    background-color:#102125;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 1.1vw; */
+  }
+  /* .search_body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  } */
+  .search_form{
+  /*    display: flex;
+    flex-direction: row;
+    align-content: center; */
+  /*   justify-content: space-between; */
+    text-align:center;
+  }
+  /* .name{
+    font-size: 5vw;
+    text-align:center;
+    margin:0vw 0vw 2vw;
+  } */
+  #postForm{
+    text-align:center;
+    margin-top: 10vw;
+    margin-bottom:2vw;
+  }
+  
+  #tab{
+    background-color: white;
+    border-radius: 2vw;
+    /* margin-left:20vw; */
+  }
+  
+  #r:hover{
+    background-color: black;
+  }
+  
+  .butt{
+    background-color:rgb(51, 53, 61);
+      /* padding: 0.09vw 1.4vw; */
+      border-radius: 1.5vw;
+      color: white;
+      padding: 0.3vw;
+      width: 8vw;
+    
+  }
+  .textbox_form{
+      border-radius: 0.4vw;
+      text-align: center;
+      background: rgb(26, 49, 49);
+      height: 2vw;
+      padding: 1vw;
+      color: cyan;
+      margin-right: 2vw;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .logo{
+    width: 5vw;
+  }
+  .add_med_btn{
+    height: 1.5vw;
+      width: 8vw;
+      height: 2.5vw;
+      display: inline-block;
+      color: white;
+      position: relative;
+      left: 85vw;
+      border: 0.1vw black solid;
+      text-align: center;
+      padding-top: 0.5vw;
+      font-size: 1.1vw;
+      text-decoration: none;
+      /* font-family: 'Limelight', cursive; */
+      border-radius: 0.5vw;
+      background-color: #b2b2b2;
+      /* background-color: tomato; */
+      margin-top: 3vw;
+  }
+  .add_med_btn:hover{
+    border: cyan solid 0.1vw;
+  }
+  #del{
+    display: none;
+  }

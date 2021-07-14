@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RequiredMeds</title>
+    <link rel="stylesheet" href="temp.css">
+    <link href="new_nav.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <header class="head">
+        <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="">
+        <h1 class="name">We For You</h1>
+        <ul style="display: inline-block; position: relative; left: 0vw;">
+            <li style="display: inline;"><a href="/" class="nav">
+                    <p>Home</p>
+                </a></li>
+            <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+                    <p>Donate</p>
+                </a></li>
+            <li style="display: inline;">
+                <% if(FullName){ %>
+                    <a href="/searchMed" class="nav_login">
+                        <% } else { %>
+                            <a href="/login" class="nav_login">
+                                <% } %>
+                                    <p>Helping Hand</p>
+                            </a>
+            </li>
+            <li style="display: inline;">
+                <% if(FullName){ %>
+                    <a href="" class="review">
+                        <p>
+                            <%= FullName %>
+                        </p>
+                        <% } else { %>
+                            <a href=" /login" class="review">
+                                <p>
+                                    Login
+                                </p>
+                                <% } %>
+                            </a>
+            </li>
+            <li style=" display: inline;">
+                <% if(FullName){ %>
+                    <a href="/logout" class="rate_us" style="display:inline-block;">
+
+                        Logout
+
+                    </a>
+                    <% } else { %>
+                        <a href="" class="rate_us" style="display:none;">
+                        </a>
+                        <% } %>
+
+            </li>
+        </ul>
+    </header>
+
+
+    <div class="med_query">
+        <div class="med_name">Medicine: <%= medicine %>
+        </div>
+        <div class="city_name">City: <%= city %>
+        </div>
+    </div>
+    <% if(!dealers.length){ %>
+        <div class="med_query">
+            <p class="med_name" style="width:80vw">Sorry, no results found. Try other data or check spelling!!</p>
+        </div>
+        <% }else{ %>
+            <!-- <div style="display:flex; flex-direction:column;justify-content:center; height:30vw ;"> -->
+            <% for(let dealer of dealers){ %>
+                <div class="main">
+                    <div class="details">
+                        <div class="dealer">
+                            <div class="name">
+                                <%= dealer.FullName %>
+                            </div>
+                            <div class="phone">Contant No: <%= dealer.phone %>
+                            </div>
+                        </div>
+                        <div class="medicine">
+
+                            <% for(let med of dealer.medicines){ %>
+                                <% if(med.name===medicine){ %>
+                                    <div class="price">
+                                        Price: <%= med.price %>/unit
+                                    </div>
+                                    <div class="qty">
+                                        Qty: <%= med.qty %>
+                                    </div>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                    <div class="address">
+                        <p>
+                            <%= `Address: ${dealer.address}` %>
+                        </p>
+                    </div>
+                </div>
+                <% } %>
+                    <% } %>
+                        <script src="nav.js"></script>
+</body>
+
+</html>

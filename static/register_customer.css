@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    
+  }
+  .bg_all{
+    height: 100px;
+    width: 100vw;
+    /* background-image: url('') */
+    background: #102125;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    /* font-size: 0.9vw; */
+  }
+  .head{
+    font-family:  'Signika Negative', sans-serif;
+    font-weight: normal;
+  }
+  .customer{
+    height: 2vw;
+    width: 15vw;
+    background-color: #101010;
+    border-radius: 1vw 1vw 0vw 0vw;
+    text-align: center;
+    padding-top: 0.5vw;
+    position: absolute;
+    left: 35vw;
+    top: 9vw;
+    color: white;
+  }
+  .register{
+    height: 35vw;
+    width: 30vw;
+    background-color: #101010;
+    border-radius: 0vw 1vw 1vw 1vw;
+    position: absolute;
+    left: 35vw;
+    top: 11vw;
+  }
+  .register:hover{
+    box-shadow:0 45px 45px -20px rgb(143, 33, 33);
+  }
+  .register_fields{
+    padding-top: 1vw;
+    font-size: 0.8vw;
+    color: white;
+  }
+  .register_form{
+      padding-left: 4vw;
+  }
+  .sign_up{
+      padding: 2vw 0vw 0vw 3vw;
+      color: white;
+  }
+  .register_values{
+      background-color: transparent;
+      border: none;
+      height: 2vw;
+      color: cyan;
+      margin-top: 2.5vw;
+      width: 20vw;
+  }
+  .sign_up_btn{
+      display: inline-block;
+      background-color: tomato;
+      padding: 0.4vw 0.5vw 0.5vw 0.7vw;
+      margin: 3vw 0vw 0vw 3vw;
+      border-radius: 1vw;
+      height: 1vw;
+      color: white;
+      text-decoration: none;
+  }
+  .sign_up_btn:hover{
+      border: cyan  0.05vw solid ;
+      cursor: pointer;
+  }
+  .sign_in_btn{
+    display: inline-block;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: white;
+  }
+  .sign_in_btn:hover{
+    color:cyan;
+  }
+  #submit{
+    display: none;
+  }
+  #checkpass{
+    color: grey;
+    font-size: 0.7vw;
+    display: none;
+  }

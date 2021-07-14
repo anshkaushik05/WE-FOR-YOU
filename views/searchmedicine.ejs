@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchMeds</title>
+    <link href="new_nav.css" rel="stylesheet" type="text/css" />
+    <link href="search.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="logo.png">
+
+</head>
+
+<body class="search_body">
+    <header class="head">
+        <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="">
+        <h1 class="name">We For You</h1>
+        <ul style="display: inline-block; position: relative; left: 0vw;">
+            <li style="display: inline;"><a href="/" class="nav">
+                    <p>Home</p>
+                </a></li>
+            <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+                    <p>Donate</p>
+                </a></li>
+            <li style="display: inline;">
+                <% if(FullName){ %>
+                    <a href="/searchMed" class="nav_login">
+                        <% } else { %>
+                            <a href="/login" class="nav_login">
+                                <% } %>
+                                    <p>Helping Hand</p>
+                            </a>
+            </li>
+            <li style="display: inline;">
+                <% if(FullName){ %>
+                    <a href="" class="review">
+                        <p>
+                            <%= FullName %>
+                        </p>
+                        <% } else { %>
+                            <a href=" /login" class="review">
+                                <p>
+                                    Login
+                                </p>
+                                <% } %>
+                            </a>
+            </li>
+            <li style=" display: inline;">
+                <% if(FullName){ %>
+                    <a href="/logout" class="rate_us" style="display:inline-block;">
+                        <p>
+                            Logout
+                        </p>
+                    </a>
+                    <% } else { %>
+                        <a href="" class="rate_us" style="display:none;">
+                        </a>
+                        <% } %>
+
+            </li>
+        </ul>
+    </header>
+
+    <div class="bname">
+        We For You
+    </div>
+    <div class="search">
+
+        <form action="/search" method="get">
+            <div class="search_form">
+                <i class="fa fa-search"
+                    style="position: relative; top:2vw; left: 6vw;width: 1vw;color: black; background: transparent;"></i>
+                <input type="text" id="med" placeholder="Enter Medicine" name="medicine">
+            </div>
+            <div class="search_form">
+                <i class="fa fa-search"
+                    style="position: relative; top:2vw; left: 6vw;width: 1vw;color: black; background: transparent;"></i>
+                <input type="text" id="city" placeholder="Enter City" name="city">
+            </div>
+            <div class="search_btn">
+                <button id="btn_search">Search</button>
+            </div>
+        </form>
+
+    </div>
+
+    <% if(type==='dealer' ){ %>
+        <div class="add_med_btn">
+        <a href="/insert" id="insertlink" style="text-decoration: none; color: #102125;">Add More Meds</a>
+        </div>
+        <% } %>
+            <script src="nav.js"></script>
+</body>
+
+</html>

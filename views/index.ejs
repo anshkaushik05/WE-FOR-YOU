@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Home</title>
+  <link href="AboutUs&Slideshow.css" rel="stylesheet" type="text/css" />
+  <link href="new_nav.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="style_foot.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet"> -->
+  <link href="donate.css" rel="stylesheet">
+  <!-- <link href = "foot.css" rel = "stylesheet"/> -->
+  <!-- <link rel="stylesheet" href="wallpaperflare.com_wallpaper.jpg" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="my_foot.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="logo.png">
+
+</head>
+
+<body>
+  <!-- <p>Hello World</p> -->
+  <div id="loading">
+
+  </div>
+
+  <header class="head">
+    <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg
+    " alt="">
+    <!-- https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg -->
+    <h1 class="name">We For You</h1>
+    <ul style="display: inline-block; position: relative; left: 0vw;">
+      <li style="display: inline;"><a href="/" class="nav">
+          <p>Home</p>
+        </a></li>
+      <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+          <p>Donate</p>
+        </a></li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="/searchMed" class="nav_login">
+            <% } else { %>
+              <a href="/login" class="nav_login">
+                <% } %>
+                  <p>Helping Hand</p>
+              </a>
+      </li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="" class="review">
+            <p>
+              <%= FullName %>
+            </p>
+            <% } else { %>
+              <a href=" /login" class="review">
+                <p>
+                  Login
+                </p>
+                <% } %>
+              </a>
+      </li>
+      <li style=" display: inline;">
+        <% if(FullName){ %>
+          <a href="/logout" class="rate_us" style="display:inline-block;">
+            <p>
+              Logout
+            </p>
+          </a>
+          <% } else { %>
+            <a href="" class="rate_us" style="display:none;">
+            </a>
+            <% } %>
+
+      </li>
+    </ul>
+  </header>
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="https://themegeniuslab.com/html/proffer-v2-cp/assets/images/slider/slide-2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elyssa-kaplan-an-employee-at-world-central-kitchen-news-photo-1586376300.jpg"
+          alt="">
+      </div>
+      <div class="slide">
+        <img src="https://wsuguardian.com/wp-content/uploads/2021/04/pexels-nataliya-vaitkevich-5863389-scaled.jpg">
+      </div>
+      <div class="slide">
+        <img
+          src="https://res.cloudinary.com/sharecare/image/upload/f_auto/v1596719562/articles/help-yourself-helping-others-coronavirus"
+          alt="">
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </div>
+  <br>
+
+  <br>
+  <!-- <section id="color">
+    
+</section> -->
+  <!-- <br> -->
+  <section id="donate">
+    <div class="donate_options">
+      <div class="donate">
+        <h2 class="donate_head">Donate</h2>
+        <br>
+        <p class="donate_content">A donation is a gift for charity, humanitarian aid, or to benefit a cause.
+          A donation may take various forms, including money, alms, services, or goods such as clothing, toys,
+          food, or vehicles. A donation may satisfy medical needs such as blood or organs for transplant.
+          Family giving creates a bond, helping to bolster relationships through a shared goal and raising more
+          money than could otherwise be possible through individual donations. Chances are, many of your family
+          members are already giving to charity, so working together could help you to make even more of a positive
+          impact.
+        </p>
+        <a href="/donate" class="donate_button">Donate</a>
+      </div>
+
+      <div class="donate">
+        <h2 class="donate_head" id="helping_hand">Helping hand</h2>
+        <br>
+        <p class="donate_content">With lakhs of people contracting COVID-19 every day in India, it is not surprising
+          that the medicines which may aid the treatment of COVID-19 detected patients, are flying off the shelves.Due
+          to the sharp rise in COVID-19 cases in India, the demand for such medicines is high and the supply is not able
+          to match it We are here to help dealer connect to the customer.As a result, many people who need COVID-19
+          medication are unable to get their hands on these medicines.We are here to help dealers reach customers and
+          fulfill customers medicine requirements.
+        </p>
+        <% if(FullName){ %>
+          <a href="/searchMed" class="donate_button">Check</a>
+          <% } else { %>
+            <a href="/login" class="donate_button">Check</a>
+            <% } %>
+      </div>
+
+      <div class="donate">
+        <h2 class="donate_head">Volunteer</h2>
+        <br>
+        <p class="donate_content">A “volunteer” is generally defined as a person who performs work for charitable,
+          humanitarian, or civic reasons for a public agency or non-profit organization, without the expectation,
+          promise, or receipt of any compensation for their work. People choose to volunteer for a variety of reasons.
+          For some it offers the chance to give something back to the community or make a difference to the people
+          around them. For others it provides an opportunity to develop new skills or build on existing experience and
+          knowledge. A person who voluntarily undertakes or expresses a willingness to undertake a service
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSesEruVcCv0jS1wBYs7Kcda0aqPaxq87xWt91NJ3Ycl9DN1UQ/viewform?usp=sf_link"
+          class="donate_button">Proceed</a>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section id="AboutUs">
+    <div id="AboutUsPara">
+      <h1 id="abtUsh"><span id="sp">About Us</sp>
+      </h1>
+      <br>
+      <p id="aboutuspara">We help you reach one of the best charities and help you donate them.
+        If you are in need of some medicines, we are here to help. You can find various medicines and leads in the
+        helping hand section.
+        If you have some leads then u can register your medicines and provide them, To help the needy.
+        If you want to help us reach our goal then u can also register in our volunteer section.
+      </p>
+    </div>
+    <div id="AboutUsImage">
+      <img id="imgabt"
+        src="https://www.nationwidechildrens.org/-/media/nch/700childrens/2019/11/blog-volunteering-and-mentoring.ashx?w=706&h=470&as=1&bc=ffffff&hash=0A7EEADE2C8A4C5CB49E9E593B98623D">
+    </div>
+  </section>
+  <br>
+  <footer>
+    <div class="foot">
+      <div class="main_foot">
+        <div class="foot_logo">
+          <span style="position: relative;left: -5vw;"><img
+              src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="logo_img"
+              style="width: 4vw; border-radius: 4vw;"></span>
+          <pre class="foot_name">WE FOR YOU</pre>
+        </div>
+        <hr style="margin-left: 2vw;width: 9vw; color: cyan;">
+        <div class="foot_social">
+          <a href="#"><i class="fa fa-facebook" id="fb"></i></a>
+          <a href="#"><i class="fa fa-twitter" id="twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin" id="linkedin"></i></a>
+        </div>
+      </div>
+      <div class="imp_links">
+        <h2 class="contact_icon_heading">Explore</h2>
+        <a href="#" class="main_links">
+          <p class="footer_button">Donate</p>
+        </a>
+        <a href="#" class="main_links">
+          <p class="footer_button">Helping hand</p>
+        </a>
+        <a href="#" class="main_links">
+          <p class="footer_button">Volunteer</p>
+        </a>
+      </div>
+      <div class="ourdev">
+        <h2>OUR DEVELOPERS</h2>
+        <ul>
+          <li>Anchit Kothari</li>
+          <li>Ansh Kaushik</li>
+          <li>Bhavesh Agarwal</li>
+          <li>Devansh Rathi</li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <div class="address">
+          <h2 class="contact_icon_heading">Visit</h2>
+          <span class="contact_icon"><i class="fa fa-map-marker" style="position: relative;
+    top: -0.5vw;"></i></span>
+          <p class="contact_details" ">Maulana Azad National Institute of technology, Bhopal</p>
+            </div>
+            <div class=" email_numbers">
+          <h2 class="contact_icon_heading">Contact Detail</h2>
+          <span class="contact_icon"><i class="fa fa-phone"></i></span>
+          <p class="contact_details"> 1234567890</p>
+          <div style="height: 0.5vw;"></div>
+          <span class="contact_icon"><i class="fa fa-envelope"></i></span>
+          <p class="contact_details">weforyou@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p> &copy; Copyright © weforyou .2021 All rights reserved</p>
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+  <script src="nav.js"></script>
+</body>
+
+</html>

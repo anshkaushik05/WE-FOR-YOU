@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginpage.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="new_nav.css" rel="stylesheet" type="text/css" />
+
+  <link rel="icon" href="logo.png">
+
+</head>
+
+<body>
+  <header class="head">
+    <img class="logo" src="https://i.pinimg.com/originals/3f/3d/d9/3f3dd9219f7bb1c9617cf4f154b70383.jpg" alt="">
+    <h1 class="name">We For You</h1>
+    <ul style="display: inline-block; position: relative; left: 0vw;">
+      <li style="display: inline;"><a href="/" class="nav">
+          <p>Home</p>
+        </a></li>
+      <li style="display: inline;"><a class="nav" id="abtUs" href="/donate">
+          <p>Donate</p>
+        </a></li>
+      <li style="display: inline;"><a href="/login" class="nav_login">
+          <p>Helping Hand</p>
+        </a></li>
+      <li style="display: inline;">
+        <% if(FullName){ %>
+          <a href="" class="review">
+            <p>
+              <%= FullName %>
+            </p>
+            <% } else { %>
+              <a href=" /login" class="review">
+                <p>
+                  Login
+                </p>
+                <% } %>
+              </a>
+      </li>
+      <li style=" display: inline;">
+        <% if(FullName){ %>
+          <a href="/logout" class="rate_us" style="display:inline-block;">
+            <p>
+              Logout
+            </p>
+          </a>
+          <% } else { %>
+            <a href="" class="rate_us" style="display:none;">
+            </a>
+            <% } %>
+
+      </li>
+    </ul>
+  </header>
+  <div class="content">
+
+    <div class="buttons">
+      <div id="dealerButton">Dealer</button></div>
+      <div id="customerButton">Customer</button></div>
+    </div>
+    <div id="main">
+      <div id="dealer">
+        <form action="/login" method="post" id="dealerForm">
+          <input placeholder="Username" type="text" name="username" id="username" size="50">
+          <br>
+          <br>
+          <input placeholder="Password" type="password" name="password" id="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required size="50">
+          <!-- <input type="checkbox">Show Password -->
+          <br>
+          <br>
+          <input type="text" name="type" id="type">
+          <!-- <input type="checkbox" onclick="myFunction()">Show Password -->
+          <div id="Error">Invalid Username or Password</div>
+          <button id="checking">Login</button>
+
+        </form>
+        <div id="noId">
+          <span>Don't have an account?</span> <a id="signup" href="/customerRegister
+          ">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="loginpage.js"></script>
+    <script src="nav.js"></script>
+
+    </script>
+
+
+</body>
+
+</html>
